@@ -3,16 +3,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import selectCity from '../actions/index';
+import { selectCity } from '../actions/index';
 
 class City extends Component { // A stateful component needs to
   constructor(props) { // be promoted into a class
     super(props);
     this.state = {}; // defines initial state
   }
-  handleClick = ()=>{
+  handleClick = () =>{
     this.props.selectCity(this.props.city);
-    console.log(this.props.city);
   };
   render() {
     return (<li className="list-group-item" onClick={this.handleClick}>
