@@ -33,7 +33,7 @@ class CityList extends Component { // A stateful component needs to
 
    function mapDispatchToProps(dispatch) {
     return bindActionCreators(
-    {setCities},dispatch);
+    {setCities},dispatch); //{setCities :setCities},dispatch)
    } 
 
 
